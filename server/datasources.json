@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "url": "mongodb://loopboard:password@localhost:27017/loopboard",
+    "name": "mongo",
+    "connector": "loopback-connector-mongodb"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Card",
+  "plural": "cards",
+  "base": "Base",
+  "idInjection": true,
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasMany",
+      "model": "Account",
+      "foreignKey": "",
+      "through": "AccountCard"
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": ""
+    },
+    "cardActivities": {
+      "type": "hasMany",
+      "model": "CardActivity",
+      "foreignKey": ""
+    },
+    "cardStatuses": {
+      "type": "belongsTo",
+      "model": "CardStatus",
+      "foreignKey": ""
+    },
+    "statusLogs": {
+      "type": "hasMany",
+      "model": "StatusLog",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

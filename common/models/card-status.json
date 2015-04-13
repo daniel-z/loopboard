@@ -1,0 +1,21 @@
+{
+  "name": "CardStatus",
+  "plural": "card-status",
+  "base": "Base",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "card": {
+      "type": "hasMany",
+      "model": "Card",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

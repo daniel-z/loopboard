@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Account": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Base": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "Card": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "AccountCard": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "CardActivity": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "CardStatus": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "StatusLog": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Project": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}

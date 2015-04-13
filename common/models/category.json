@@ -1,0 +1,27 @@
+{
+  "name": "Category",
+  "plural": "categories",
+  "base": "Base",
+  "idInjection": true,
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "project": {
+      "type": "belongsTo",
+      "model": "Project",
+      "foreignKey": ""
+    },
+    "cards": {
+      "type": "hasMany",
+      "model": "Card",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
