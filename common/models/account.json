@@ -34,7 +34,8 @@
     "projects": {
       "type": "hasMany",
       "model": "Project",
-      "foreignKey": ""
+      "foreignKey": "",
+      "through": "AccountProject"
     }
   },
   "acls": [{
@@ -42,18 +43,21 @@
     "principalId": "$authenticated",
     "permission": "ALLOW",
     "property": "__create__projects"
-  },
-  {
+  }, {
     "principalType": "ROLE",
     "principalId": "$authenticated",
     "permission": "ALLOW",
     "property": "__get__projects"
-  },
-  {
+  }, {
     "principalType": "ROLE",
     "principalId": "$authenticated",
     "permission": "ALLOW",
     "property": "find"
+  }, {
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "__link__projects"
   }],
   "methods": []
 }

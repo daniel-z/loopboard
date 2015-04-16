@@ -13,9 +13,22 @@
     "card": {
       "type": "hasMany",
       "model": "Card",
-      "foreignKey": ""
+      "foreignKey": "statusId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "find"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "create"
+    }
+  ],
   "methods": []
 }

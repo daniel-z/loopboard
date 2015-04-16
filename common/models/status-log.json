@@ -17,6 +17,13 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "permission": "ALLOW",
+      "property": "updateAttributes",
+      "principalType ": "ROLE",
+      "principalId ": "$authenticated"
+    }
+  ],
   "methods": []
 }

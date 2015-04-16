@@ -22,6 +22,31 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [{
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "find"
+  }, {
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "__create__cards"
+  }, {
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "__get__cards"
+  }, {
+    "principalType": "ROLE",
+    "principalId": "$projectMember",
+    "permission": "ALLOW",
+    "property": "__create__cards"
+  }, {
+    "principalType": "ROLE",
+    "principalId": "$projectAdmin",
+    "permission": "ALLOW",
+    "property": "__create__cards"
+  }],
   "methods": []
 }

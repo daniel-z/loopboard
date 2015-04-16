@@ -17,7 +17,7 @@
     "accounts": {
       "type": "hasMany",
       "model": "Account",
-      "foreignKey": "",
+      "foreignKey": "statusId",
       "through": "AccountCard"
     },
     "category": {
@@ -30,7 +30,7 @@
       "model": "CardActivity",
       "foreignKey": ""
     },
-    "cardStatuses": {
+    "status": {
       "type": "belongsTo",
       "model": "CardStatus",
       "foreignKey": ""
@@ -41,6 +41,13 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "updateAttributes"
+    }
+  ],
   "methods": []
 }
