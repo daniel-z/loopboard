@@ -6,7 +6,9 @@ var app = module.exports = loopback();
 
 app.start = function () {
   app.use('/lb-services.js', loopback.static(path.resolve(__dirname, '../js/lb-services.js')));
-
+  app.use('/documentation/mean/*', loopback.static(path.resolve(__dirname, '../docular_generated')));
+  app.use('/resources', loopback.static(path.resolve(__dirname, '../docular_generated/resources')));
+  app.use('/site.json', loopback.static(path.resolve(__dirname, '../docular_generated/site.json')));
   // start the web server
   return app.listen(function () {
     app.emit('started');
